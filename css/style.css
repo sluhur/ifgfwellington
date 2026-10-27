@@ -123,3 +123,42 @@ nav{}
 @media(max-width:860px){header .wrap{height:68px}header img{height:54px}nav{top:68px}}
 
 .nzmap{display:block;border-radius:20px;overflow:hidden;box-shadow:0 14px 30px rgba(11,26,40,.2);transition:.25s}.nzmap:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(11,26,40,.3)}.nzmap img{width:100%;height:auto;display:block}
+
+.vgrid{display:grid;gap:24px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));margin-top:36px}
+.vcard{background:#fff;border:1px solid #e6e9ec;border-radius:20px;overflow:hidden;transition:.25s}
+.vcard:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(17,92,155,.12)}
+.vcard img{width:100%;height:auto;aspect-ratio:300/173;object-fit:cover;display:block;background:#eef2f5}
+.vtxt{padding:18px 20px 22px}.vtxt h3{font-size:1.15rem;margin:0 0 6px}.vtxt p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
+
+/* Welcome with photo background */
+.welcome{position:relative;color:#fff;background-color:#0b2a45;background-size:cover;background-position:center;min-height:560px;display:flex;align-items:center}
+.welcome:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(6,28,48,.88) 0%,rgba(6,28,48,.7) 38%,rgba(6,28,48,.1) 75%)}
+.welcome .wrap{position:relative;width:100%}
+.welcome-text{max-width:520px}
+.welcome .eyebrow{color:#cfe6fb}.welcome em{color:#cfe6fb}
+@media(max-width:860px){.welcome{min-height:0;background-position:70% center}.welcome:before{background:rgba(6,28,48,.72)}}
+/* darker welcome overlay */
+.welcome:before{background:linear-gradient(90deg,rgba(4,16,30,.96) 0%,rgba(4,16,30,.88) 40%,rgba(4,16,30,.6) 100%)}
+@media(max-width:860px){.welcome:before{background:rgba(4,16,30,.85)}}
+
+.welcome{background-position:center 60%}
+
+.photo img.nat{width:auto;height:auto;max-width:100%;object-fit:none;margin:auto;image-rendering:auto}.photo:has(img.nat){display:flex;align-items:center;justify-content:center;background:#eef2f5}
+/* vision: 5 x 2 */
+.vgrid{grid-template-columns:repeat(5,1fr);gap:18px}
+.vtxt{padding:14px 14px 18px}.vtxt h3{font-size:1.05rem}.vtxt p{font-size:14px}
+@media(max-width:1000px){.vgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:640px){.vgrid{grid-template-columns:repeat(2,1fr);gap:12px}}
+
+/* values: all 5 in one row */
+.values-cards{grid-template-columns:repeat(5,1fr);gap:16px;align-items:stretch}
+.values-cards .card{padding:22px 18px}
+.values-cards .card h3{font-size:1.15rem}
+.values-cards .card p{font-size:13.5px;line-height:1.55;margin:0}
+@media(max-width:1000px){.values-cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.values-cards{grid-template-columns:1fr}}
+
+/* doctrine: 2 columns */
+.beliefs{columns:2;column-gap:56px;padding-left:22px}
+.beliefs li{break-inside:avoid;margin-bottom:16px}
+@media(max-width:860px){.beliefs{columns:1}}
