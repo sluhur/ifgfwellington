@@ -162,3 +162,5 @@ nav{}
 .beliefs{columns:2;column-gap:56px;padding-left:22px}
 .beliefs li{break-inside:avoid;margin-bottom:16px}
 @media(max-width:860px){.beliefs{columns:1}}
+
+.dark .card{color:var(--ink);background:#fff}.dark .card .eyebrow{color:var(--accent)}.dark .card p{color:#2b3640;margin:0;line-height:1.9}
