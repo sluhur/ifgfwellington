@@ -111,3 +111,5 @@ nav a{display:inline-block}
  .wa-float{padding:14px;right:14px;bottom:14px}
  .facts{grid-template-columns:1fr 1fr}
 }
+
+.flyer{margin:0 auto;max-width:560px}.flyer img{width:100%;height:auto;border-radius:20px;box-shadow:0 18px 40px rgba(17,26,40,.25)}
